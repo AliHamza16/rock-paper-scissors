@@ -14,7 +14,7 @@ choices.forEach((c) => {
     document.getElementById(c).addEventListener('click', () => {
         const x = getComputerChoice(games);
         const winner = getWinner(c, x);
-        computer.innerText = `computer: ${x}`;
+        computer.innerText = x;
         setTimeout(() => {
             computer.innerText = 'computer: waiting...';
         }, 1000);
